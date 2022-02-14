@@ -1,0 +1,160 @@
+body{
+    margin: 0px;
+    background-image: url(pexels-photo-952670.jpeg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+#header h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+#header h1 a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+#header .row {
+    justify-content: space-between;
+}
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    list-style: none;
+}
+#main-navigation ul li{
+    margin: 0px 10px;
+    padding: 25px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-navigation ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+#main-nvigation ul li a:after {
+    content:"";
+    border: 2px solid #fff;
+    width: 20%;
+    position: absolute;
+    left: 25%;
+    bottom: -10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+#main-navigation ul li:hover a:after {
+    width: 80%;
+    left: 10%;
+    opacity: 1;
+}
+#banner{
+    height: 980px;
+    background-size: 100% 100%;
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider{
+
+    0% {
+        background-image: url("../assests/images\ \(11\).jpg");
+    }
+    20% {
+        background-image: url("../assests/images.jpg");
+    }
+    40% {
+        background-image: url(../assests/images\ \(12\).jpg);
+    }
+    60% {
+        background-image: url("../assests/images\ \(2\).jpg");
+    }
+    80% {
+        background-image: url("../assests/images\ \(2\).jpg");
+    }
+    100% {
+        border-corner-image: url("../assests/images\ \(2\).png");
+    }
+}
+#section_1{
+    padding: 100px 15px;
+}
+#section_1 .row {
+    justify-content: center;
+}
+#section_1 .description h2 {
+    font-size: 45px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #fff;
+}
+#section_1 .description p{
+    color: #777;
+    line-height: 30px;
+}
+#section_1 .column {
+    width: 50%;
+    margin-right: 200px;
+}
+#section_1 .column img{
+    width: 100%;
+}
+#section_2 .row {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+#section_2 .column {
+    width: 25%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+#section_2 .column img {
+    width: 100%;
+    height: inherit;
+}
+#section_2 .icon {
+    width: 25%;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    transition: 1s;
+    opacity: 0;
+    z-index: 2;
+}
+#section_2 h3 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
